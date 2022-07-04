@@ -4,14 +4,13 @@ let left, opacity, scale;
 let animating;
 // array untuk menampung nilai validasi input nantinya
 const validations = [];
- 
 $(".next").click(function () {
   // Check validasi (valid/invalid) dari input yang ditentukan
   const input = $('#step1 input ,#step1 textarea')
   .attr('required',true).map(function(i, requiredField){
     return requiredField.checkValidity();
   })
-  // push value array dari setiap input yang telah dicheck
+   // push value array dari setiap input yang telah dicheck
   for (let i = 0; i < 9; i++) {validations[i] = Object.values(input)[i]};
   // Function untuk check setiap nilai array bernilai true
   const allAreTrue = (arr) => arr.every(element => element === true);
@@ -59,7 +58,7 @@ $(".next").click(function () {
     alert("Lama Pengalaman tidak valid ")
     $(".fs-hint").html("*Pengalaman anda tidak sesuai recruitment (minimal 5 tahun)")
   } else {
-    // Selain beberapa input tersebut invalid
+     // Selain beberapa input tersebut invalid
     alert("Isi formulir sampai selesai")
     $(".fs-hint").html("*terdapat input form yang tidak terisi")
   }
@@ -95,7 +94,7 @@ $(".previous").click(function () {
         current_fs.hide();
         animating = false;
       },
-      easing: "eaaseInOutBack"
+      easing: "easeInOutBack"
     }
   );
 });
@@ -103,7 +102,6 @@ $(".previous").click(function () {
 $(".submit").click(function () {
   if (confirm("Apakah data yang diinputkan sudah benar?") == true) {
    $("#popup").addClass("open-popup");
-   //mengambil data yang diinputkan oleh user lalu menampilkanya
    $("#pesan-popup").html(`Terimakasih kepada ${$("#nama").val()} 
    telah mendaftar ke Perusahaan PT. Telkom Indonesia, untuk informasi lebih lanjut kami akan
     kirimkan ke alamat email ${$("#email").val()} / ke nomer ${$("#telephone").val()} yang telah anda catumkan `);
@@ -111,7 +109,7 @@ $(".submit").click(function () {
   }
 });
 $(".close-popup").click(function () {
-  // reload halaman ketika tombol di click
+   // reload halaman ketika tombol di click
    location.reload();
 });
 
