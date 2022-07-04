@@ -37,7 +37,7 @@ Kami membuat sebuah aplikasi multi step form berbasis website yang ditujukan kep
 
 [Link Documentation](./documentation/Kelompok2_Tugas%20Besar%20Tefa%202.pdf)
 
-## Our Temas
+## Our Teams
 
 - Fikri -> Develop Aplikasi Form
 - Maharani -> Documentation (Google Document)
