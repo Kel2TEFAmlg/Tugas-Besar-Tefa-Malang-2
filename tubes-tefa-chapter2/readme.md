@@ -35,7 +35,7 @@ Kami membuat sebuah aplikasi multi step form berbasis website yang ditujukan kep
 
 ## Link
 
-[Link Documentation](./documentation/Kelompok2_Tugas%Besar%Tefa%2.pdf)
+[Link Documentation](./documentation/Kelompok2_Tugas Besar Tefa 2.pdf)
 
 ## Our Temas
 
